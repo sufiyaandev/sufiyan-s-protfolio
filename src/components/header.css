@@ -1,14 +1,14 @@
 #header {
-  background:transparent;
+  background: transparent;
   position: absolute;
   z-index: 998;
   width: 100%;
 }
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: top fixed;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: top fixed;
 }
 a {
   text-decoration: none;
@@ -19,7 +19,7 @@ a {
   list-style: none;
 }
 .list li {
-    color: white;
+  color: white;
   display: flex;
   padding: 0.5rem;
   cursor: pointer;
@@ -41,40 +41,48 @@ a {
 ul li:hover ul.drop-down {
   display: block;
 }
-.mob-navbar{
-    display: block;
-    text-align: center;
-    
+.mob-navbar {
+  margin-top: 3%;
+  display: block;
+  text-align: center;
 }
-.mob-list{
-    padding: 0;
-    display: none;
+.mob-navbar svg:hover {
+  color: rgb(255, 170, 0);
 }
-.mob-list li{
-    list-style: none;
-    padding: 0.5rem;
+.mob-list {
+  padding: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 20px;
+}
+.mob-list li {
+  list-style: none;
+  padding: 0.5rem;
+  color: white;
+}
+.mob-list li:hover {
+  color: rgb(255, 170, 0);
 }
 .mob-drop-down {
-    display: none;
-    border-radius: 10px;
-    background: transparent;
-    padding : 10px;
+  display: none;
+  border-radius: 10px;
+  background: transparent;
+  padding: 10px;
 }
 ul li:hover ul.mob-drop-down {
-    display: block;
+  display: block;
+}
+
+.list li:hover {
+  color: rgb(255, 170, 0);
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
   }
-
- .list li:hover{
-    color: rgb(255, 170, 0);
- } 
-@media(max-width:768px){
-    .navbar{
-        display: none;
-    }
 }
-@media(min-width:768px){
-    .mob-navbar{
-        display: none;
-    }
+@media (min-width: 768px) {
+  .mob-navbar {
+    display: none;
+  }
 }
-

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
+import { teal } from '@mui/material/colors';
 
 function Header() {
   function toggleSideBar() {
@@ -25,7 +26,7 @@ function Header() {
             <li>Services</li>
             <li>Portfolio</li>
             <li>
-              Drop Down  <KeyboardArrowDownIcon fontSize='small'/>
+              Drop Down <KeyboardArrowDownIcon fontSize="small" />
               <ul className="drop-down">
                 <li>drop 1</li>
                 <li>drop 2</li>
@@ -37,10 +38,10 @@ function Header() {
           </ul>
         </nav>
 
-                {/* MOBILE VIEW */}
+        {/* MOBILE VIEW */}
 
-                <nav className="mob-navbar">
-                   <MenuIcon onClick={toggleSideBar}/>
+        <nav className="mob-navbar">
+          <MenuIcon onClick={toggleSideBar} sx={{ color: teal[50] }} />
           <ul className="mob-list">
             <Link href="/">
               {' '}
@@ -53,7 +54,7 @@ function Header() {
             <li>Services</li>
             <li>Portfolio</li>
             <li>
-              Drop Down  <KeyboardArrowDownIcon fontSize='small'/>
+              Drop Down <KeyboardArrowDownIcon fontSize="small" />
               <ul className="mob-drop-down">
                 <li>drop 1</li>
                 <li>drop 2</li>
@@ -64,7 +65,6 @@ function Header() {
             <li>Contact</li>
           </ul>
         </nav>
-    
       </header>
     </div>
   );
