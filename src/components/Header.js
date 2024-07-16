@@ -19,9 +19,9 @@ function Header() {
               {' '}
               <li>Home</li>
             </Link>
-            <Link to="/about">
+            <a href="#about">
               <li>About</li>
-            </Link>
+            </a>
             <li>Resume</li>
             <li>Services</li>
             <li>Portfolio</li>
