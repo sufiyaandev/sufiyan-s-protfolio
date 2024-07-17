@@ -10,6 +10,11 @@ function Header() {
     const sidebar = document.querySelector('.mob-list');
     sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
   }
+  const handleAboutClick = (event) => {
+    event.preventDefault();
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div>
       <header id="header">
@@ -19,7 +24,7 @@ function Header() {
               {' '}
               <li>Home</li>
             </Link>
-            <a href="#about">
+            <a href="#about" id='about-link' onClick={handleAboutClick}>
               <li>About</li>
             </a>
             <li>Resume</li>
@@ -47,9 +52,9 @@ function Header() {
               {' '}
               <li>Home</li>
             </Link>
-            <Link to="/about">
+            <a href="#about" id='about-link' onClick={handleAboutClick}>
               <li>About</li>
-            </Link>
+            </a>
             <li>Resume</li>
             <li>Services</li>
             <li>Portfolio</li>

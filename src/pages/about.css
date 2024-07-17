@@ -35,6 +35,7 @@
 }
 .head-about p{
     margin-bottom: 0;
+    padding: 0 10px 0 10px;
     position: relative;
     z-index: 2;
 }
@@ -47,6 +48,9 @@
   
     .head-about span {
       font-size: 38px;
+    }
+    .head-about p{
+      font-size: 12px;
     }
   }
 .content-about{
@@ -70,23 +74,62 @@
   flex-direction: row;
 }
 .text-in-colum{
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.text-in-colum-ul{
+  padding: 0;
 }
 .text-in-colum-ul li{
   list-style: none;
   display: flex;
-  line-height: 30px;
-  font-size: 20px;
+  line-height: 50px;
 }
 .text-in-colum-ul li span{
   padding-left:10px ;
 }
 .text-in-colum-ul li a{
-  padding-left:10px ;
+ padding-left: 10px;
+ font-size: smaller;
+ line-height: 10px;
+ margin-top: 18px;
 }
 .text-in-colum-ul li svg{
   color: rgb(255, 170, 0);
   padding: 5px;
+  text-align: center;
+  margin-top: 10px;
 }
+@media(max-width:829px){
+  .text-in-colum-ul li{
+    font-size: 12px;
+  }
+}
+@media(max-width:688px){
+  .content-about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-in-colum{
+    width: 100%;
+  
+  }
+  .text-in-row{
+    flex-direction: column;
+  }
+  .text-in-colum-ul li{
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .text-in-colum-ul li svg{
+    margin-top: 0;
+  }
+  .text-in-colum-ul li a{
+    margin-top: 10px;
+  }
+
+}
+
+

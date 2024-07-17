@@ -2,10 +2,11 @@ import React from 'react';
 import './about.css';
 import imgAbout from '../images/IMG_2909.JPG'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
-function About() {
+function About(){
+
   return (
     <div className="about-main">
       <div className="head-about">
@@ -47,5 +48,6 @@ function About() {
     </div>
   );
 }
+
 
 export default About;

@@ -5,6 +5,12 @@ import homeImage from '../images/IMG_4938.JPG';
 import About from './About';
 
 function Home() {
+
+  const handleAboutClick = (event) => {
+    event.preventDefault(); // Prevent default anchor link behavior
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="home-main">
       <div className="header-div">
@@ -14,7 +20,7 @@ function Home() {
         <h1>Sufiyan.</h1>
         <h4>I'm a Web Developer In Cosmo Solution.</h4>
 
-        <a href="#about">
+        <a href="#about" id='about-link' onClick={handleAboutClick}>
           <svg
             className="svg-text"
             xmlns="http://www.w3.org/2000/svg"
