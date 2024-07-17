@@ -3,6 +3,7 @@ import './home.css';
 import Header from '../components/Header';
 import homeImage from '../images/IMG_4938.JPG';
 import About from './About';
+import Footer from '../components/Footer';
 
 function Home() {
 
@@ -38,7 +39,9 @@ function Home() {
       </div>
       <div id="about" className="home-about-div">
         <About />
+        <div className='home-footer-div'><Footer/></div>
       </div>
+      
     </div>
   );
 }

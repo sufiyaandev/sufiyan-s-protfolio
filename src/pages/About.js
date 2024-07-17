@@ -30,6 +30,7 @@ function About(){
                     <li> <ChevronRightIcon/> <strong>City:</strong> <span>Kerala, INDIA</span></li>
                   </ul>
                 </div>
+          
                 <div class="text-in-colum">
                   <ul className='text-in-colum-ul'>
                     <li><ChevronRightIcon/>  <strong>Age:</strong> <span>22</span></li>
