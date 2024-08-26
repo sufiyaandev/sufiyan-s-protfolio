@@ -1,40 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './header.css';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import MenuIcon from '@mui/icons-material/Menu';
-import { teal } from '@mui/material/colors';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./header.css";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import MenuIcon from "@mui/icons-material/Menu";
+import { teal } from "@mui/material/colors";
 
 function Header() {
-  // function toggleSideBar() {
-  //   const sidebar = document.querySelector('.mob-list');
-  //   sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
-  // }
   function openSideBar() {
-    const sidebar = document.querySelector('.mob-list');
-    sidebar.style.display = 'block';
-    sidebar.style.opacity = '0';
+    const sidebar = document.querySelector(".mob-list");
+    sidebar.style.display = "block";
+    sidebar.style.opacity = "0";
     setTimeout(() => {
-      sidebar.style.transition = 'opacity 0.3s ease-in-out';
-      sidebar.style.opacity = '1';
+      sidebar.style.transition = "opacity 0.3s ease-in-out";
+      sidebar.style.opacity = "1";
     }, 10);
   }
-  
+
   function closeSideBar() {
-    const sidebar = document.querySelector('.mob-list');
-    sidebar.style.transition = 'opacity 0.3s ease-in-out';
-    sidebar.style.opacity = '0';
+    const sidebar = document.querySelector(".mob-list");
+    sidebar.style.transition = "opacity 0.3s ease-in-out";
+    sidebar.style.opacity = "0";
     setTimeout(() => {
-      sidebar.style.display = 'none';
+      sidebar.style.display = "none";
     }, 300);
   }
   const handleAboutClick = (event) => {
     event.preventDefault();
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
   const handleResumeClick = (event) => {
     event.preventDefault();
-    document.getElementById('resume-div').scrollIntoView({ behavior: 'smooth' });
+    document
+      .getElementById("resume-div")
+      .scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -43,14 +41,14 @@ function Header() {
         <nav className="navbar">
           <ul className="list">
             <Link href="/">
-              {' '}
+              {" "}
               <li>Home</li>
             </Link>
-            <Link to="/about" id='about-link' onClick={handleAboutClick}>
+            <Link to="/about" id="about-link" onClick={handleAboutClick}>
               <li>About</li>
             </Link>
-            <Link to="/Resume" onClick={handleResumeClick}> 
-            <li>Resume</li>
+            <Link to="/Resume" onClick={handleResumeClick}>
+              <li>Resume</li>
             </Link>
             <li>Services</li>
             <li>Portfolio</li>
@@ -69,18 +67,18 @@ function Header() {
 
         {/* MOBILE VIEW */}
 
-        <nav className="mob-navbar" >
+        <nav className="mob-navbar">
           <MenuIcon onClick={openSideBar} sx={{ color: teal[50] }} />
           <ul className="mob-list" onClick={closeSideBar}>
             <Link href="/">
-              {' '}
+              {" "}
               <li>Home</li>
             </Link>
-            <Link to="/about" id='about-link' onClick={handleAboutClick}>
+            <Link to="/about" id="about-link" onClick={handleAboutClick}>
               <li>About</li>
             </Link>
-            <Link to="/Resume" onClick={handleResumeClick}> 
-            <li>Resume</li>
+            <Link to="/Resume" onClick={handleResumeClick}>
+              <li>Resume</li>
             </Link>
             <li>Services</li>
             <li>Portfolio</li>

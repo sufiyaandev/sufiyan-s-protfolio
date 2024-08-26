@@ -16,9 +16,9 @@ function Resume() {
         </p>
       </div>
       <div className="resume-img">
-      <img src={Cvimg1} alt="" />
-      <img src={Cvimg2} alt="" />
-      <img src={Cvimg3} alt="" />
+        <img src={Cvimg1} alt="" />
+        <img src={Cvimg2} alt="" />
+        <img src={Cvimg3} alt="" />
       </div>
     </div>
   );

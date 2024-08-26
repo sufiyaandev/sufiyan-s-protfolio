@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
 
 .home-main {
   position: relative;
@@ -15,7 +15,7 @@
   position: relative;
 }
 .home-img-div::after {
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.65);
   position: absolute;
   bottom: 0;
@@ -34,7 +34,7 @@
   align-items: center;
   color: white;
   margin-top: 55vh;
-  font-family: 'Playwrite DK Loopet', 'cursive';
+  font-family: "Playwrite DK Loopet", "cursive";
   line-height: 10px;
 }
 .svg-text {
@@ -67,6 +67,6 @@
     font-size: 12px;
   }
 }
-.home-footer-div{
+.home-footer-div {
   margin-top: 10%;
 }

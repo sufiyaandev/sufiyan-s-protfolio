@@ -1,73 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
-.container{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 2%;
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+.container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  /* bottom: 2%; */
+}
+.container h2 {
+  color: white;
+  font-family: "Playwrite DK Loopet", cursive;
+}
+.container p {
+  color: white;
+  padding: 0 15% 0 15%;
+}
 
-}
-.container h2{
-    color: white;
-    font-family:'Playwrite DK Loopet', cursive;
-}
-.container p{
-    color: white;
-    padding: 0 15% 0 15%; 
-}
-.footer-img-div {
-    background-color: black;
-}
-.footer-img-div img{
-    width: 100%;
-    height: 230px;
-    position: relative;
-
-}
 .copyright {
-    color: rgba(255, 255, 255, 0.747);
-    margin-top: 30px;
+  color: rgba(255, 255, 255, 0.747);
+  margin-top: 30px;
 }
 .social-links a {
-    margin: 10px;
+  margin: 10px;
 }
-.social-links a svg{
-    color:white ;
+.social-links a svg {
+  color: white;
 }
-.social-links a svg:hover{
-    color: rgb(255, 170, 0) ;
-
+.social-links a svg:hover {
+  color: rgb(255, 170, 0);
 }
-@media(max-width:864px){
-    .container p {
-        font-size: 15px;
-    }
-    .copyright{
-        font-size: 12px;
-    }
+@media (max-width: 864px) {
+  .container p {
+    font-size: 15px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
 }
-@media(max-width:689px){
-    .container h2{
-        font-size: 20px;
-    }
-    .container p {
-        font-size: 12px;
-    }
-    .copyright{
-        font-size: 10px;
-    }
+@media (max-width: 689px) {
+  .container h2 {
+    font-size: 20px;
+  }
+  .container p {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
 }
-@media(max-width:425px){
-    .container h2{
-        font-size: 16px;
-    }
-    .container p {
-        font-size: 8px;
-    }
-    .copyright{
-        font-size: 5px;
-    }
-    .footer-img-div img{
-        height: 180px;
-    }
+@media (max-width: 425px) {
+  .container h2 {
+    font-size: 16px;
+  }
+  .container p {
+    font-size: 8px;
+  }
+  .copyright {
+    font-size: 5px;
+  }
+  .footer-img-div img {
+    height: 180px;
+  }
 }
-
