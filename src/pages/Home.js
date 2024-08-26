@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 function Home() {
 
   const handleAboutClick = (event) => {
-    event.preventDefault(); // Prevent default anchor link behavior
+    event.preventDefault();
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
   };
 

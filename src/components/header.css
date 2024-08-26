@@ -1,7 +1,7 @@
 #header {
   background: transparent;
   position: absolute;
-  z-index: 998;
+  z-index: 994;
   width: 100%;
 }
 .navbar {
@@ -33,7 +33,7 @@ a {
   margin-top: 1.5rem;
   display: none;
   position: absolute;
-  z-index: 999;
+  z-index: 995;
   border-radius: 10px;
   background-color: rgba(251, 253, 253, 0.119);
   padding: 10px;

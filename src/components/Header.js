@@ -27,7 +27,9 @@ function Header() {
             <a href="#about" id='about-link' onClick={handleAboutClick}>
               <li>About</li>
             </a>
-            <li>Resume</li>
+            <a href="#resume">
+            <li >Resume</li>
+            </a>
             <li>Services</li>
             <li>Portfolio</li>
             <li>

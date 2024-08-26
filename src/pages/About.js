@@ -2,6 +2,7 @@ import React from 'react';
 import './about.css';
 import imgAbout from '../images/IMG_2909.JPG'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import Resume from './Resume';
 // import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
@@ -13,7 +14,7 @@ function About(){
         <span>About Me</span>
         <h2>About Me</h2>
         <p>
-          Sit sint consectetur velit quisquam cupiditate impedit suscipit alias
+        I am a passionate and adaptable software developer with experience in full-stack development
         </p>
       </div>
       <div className="content-about">
@@ -45,6 +46,9 @@ function About(){
               </div>
         </div>
 
+      </div>
+      <div className="resume-about-div">
+      <Resume/>
       </div>
     </div>
   );
