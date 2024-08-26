@@ -7,7 +7,7 @@ import Resume from './Resume';
 
 
 function About(){
-
+ 
   return (
     <div className="about-main">
       <div className="head-about">
@@ -47,7 +47,7 @@ function About(){
         </div>
 
       </div>
-      <div className="resume-about-div">
+      <div id='resume-div' className="resume-about-div">
       <Resume/>
       </div>
     </div>
